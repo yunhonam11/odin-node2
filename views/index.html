@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/stylesheets/index-style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+
+    <body>
+        <h1 class="main-title"> <%= title %> </h1>
+
+        <form method="POST" action="/new-message">
+        <button class="add-msg">
+            <i id="add" class="material-icons" style="color: white; font-size: 40px;"> add </i>
+        </button>
+        </form>
+
+        <div class="messages">
+            <% for (var i = 0; i < messages.length; i++) { %>
+                <div class="msg">
+                    <p class="user"> <%= messages[i].user %> </p>
+                    <p class="txt"> <%= messages[i].text %> </p>
+                    <p class="date"> <%= messages[i].added %> </p>
+                </div>
+           <%  } %>
+        </div>
+    </body>
+</html>

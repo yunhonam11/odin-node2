@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/stylesheets/new-style.css" />
+    </head>
+
+    <body>
+        <h1 class="new-title"> <%= title %> </h1>
+
+        <div class="input-form">
+            <form method="POST" action="/new">
+                <input class="messageUser" name="messageUser" type="text" value="Name" /> 
+                <p class="msg-label"> Message </p> 
+                <textarea class="messageText" name="messageText" class="message" type="text"> </textarea>
+                <button class="input-button"> Submit </button>
+            </form>
+        </div>
+    </body>
+</html>
