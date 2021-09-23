@@ -27,6 +27,7 @@ router.post('/new', function(req, res, next) {
   res.redirect('/');
 });
 
+/* GET new message page */
 router.post('/new-message', function(req, res, next) {
   res.render('form', {title: "New Message"});
 });
